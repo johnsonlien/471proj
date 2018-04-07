@@ -32,7 +32,14 @@ class MyShell(Cmd):
 		fileObj.close()
 				
 	#def do_put(self, args):
-	#def do_ls (self, args):
+	def do_ls (self, args):
+		items = os.listdir(".")
+		newlist = []
+		for names in items:
+			if names.endswith(".txt")
+				newlist.append(names)
+		print newlist
+		
 	def do_quit(self, args):
 		print "Now disconnecting from the server and quiting..."
 		raise SystemExit
